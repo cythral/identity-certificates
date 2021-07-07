@@ -10,6 +10,15 @@ Parameters:
     Description: ARN of the Lambda Layer containing .NET
 
 Resources:
+  CertificateBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: BucketOwnerFullControl
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
   CertificateRotator:
     Type: AWS::Serverless::Function
     Properties:
@@ -23,3 +32,28 @@ Resources:
         - !Sub arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:lambdajection:${LambdajectionLayerVersion}
       Policies:
         - AWSLambdaExecute
+        - !Ref CertificateRotatorPolicy
+      Environment:
+        Variables:
+          Certificate__BucketName: !Ref CertificateBucket
+
+  CertificateRotatorPolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action: s3:ListBucket
+            Resource: !GetAtt CertificateBucket.Arn
+
+          - Effect: Allow
+            Action: s3:*Object
+            Resource: !Sub ${CertificateBucket.Arn}/*
+
+Outputs:
+  CertificateBucketArn:
+    Value: !GetAtt CertificateBucket.Arn
+    Description: ARN of the bucket where certificates live.
+    Export:
+      Name: !Sub ${AWS::StackName}:CertificateBucketArn
