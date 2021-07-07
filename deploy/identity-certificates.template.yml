@@ -9,6 +9,10 @@ Parameters:
     Type: String
     Description: ARN of the Lambda Layer containing .NET
 
+  CertificateConfigurationParameter:
+    Type: String
+    Description: Name of the parameter where certificate configuration lives.
+
 Resources:
   CertificateBucket:
     Type: AWS::S3::Bucket
@@ -36,6 +40,7 @@ Resources:
       Environment:
         Variables:
           Certificate__BucketName: !Ref CertificateBucket
+          Certificate__ConfigurationParameterName: !Ref CertificateConfigurationParameter
 
   CertificateRotatorPolicy:
     Type: AWS::IAM::ManagedPolicy
@@ -44,8 +49,10 @@ Resources:
         Version: 2012-10-17
         Statement:
           - Effect: Allow
-            Action: s3:ListBucket
-            Resource: !GetAtt CertificateBucket.Arn
+            Action:
+              - ssm:GetParameter
+              - ssm:PutParameter
+            Resource: !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter${CertificateConfigurationParameter}
 
           - Effect: Allow
             Action: s3:*Object
