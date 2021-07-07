@@ -123,6 +123,19 @@
           "System.ComponentModel.Annotations": "4.3.0"
         }
       },
+      "AWSSDK.Core": {
+        "type": "Transitive",
+        "resolved": "3.7.0.39",
+        "contentHash": "G8+hyyov3ju/4M9SdwaZhGEdYhUdp+KptrKXy9Jmjzj44MZ+wqbmxbTYc5szOTXbmx5N/b+IJM18dUUciDEnkw=="
+      },
+      "AWSSDK.S3": {
+        "type": "Transitive",
+        "resolved": "3.7.1.9",
+        "contentHash": "/By+6cP5F0NJVLLqMbExw4HRBLORt4mQbKJpmJWoR+dKMI+h+6//Ax7P48xT+VHIbgNV9l9SR9XavLsItDgFMw==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.0.39, 4.0.0)"
+        }
+      },
       "Castle.Core": {
         "type": "Transitive",
         "resolved": "4.4.0",
@@ -1435,6 +1448,7 @@
       "certificaterotator": {
         "type": "Project",
         "dependencies": {
+          "AWSSDK.S3": "3.7.1.9",
           "Lambdajection": "0.8.3",
           "Lambdajection.Layer": "0.8.3",
           "Lambdajection.Runtime": "0.8.3"
