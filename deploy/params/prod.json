@@ -1,4 +1,5 @@
 {
     "DotnetLayerVersion": "2",
-    "LambdajectionLayerVersion": "5"
+    "LambdajectionLayerVersion": "5",
+    "CertificateConfigurationParameter": "/brighid/identity/signing-certificates"
 }

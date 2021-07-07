@@ -17,5 +17,10 @@ namespace Brighid.Identity.Certificates.CertificateRotator
         /// Gets or sets the distinguished name for certificates.
         /// </summary>
         public string DistinguishedName { get; set; } = "cythral.com";
+
+        /// <summary>
+        /// Gets or sets the configuration parameter name.
+        /// </summary>
+        public string ConfigurationParameterName { get; set; } = string.Empty;
     }
 }

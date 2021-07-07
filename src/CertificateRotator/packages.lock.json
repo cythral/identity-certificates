@@ -11,6 +11,15 @@
           "AWSSDK.Core": "[3.7.0.39, 4.0.0)"
         }
       },
+      "AWSSDK.SimpleSystemsManagement": {
+        "type": "Direct",
+        "requested": "[3.7.3.20, )",
+        "resolved": "3.7.3.20",
+        "contentHash": "6m3YvnEAVv4gZj1cdg+IwCn86DPxbH/sb5f3tSrYSUJyji8f8KUYndIuC5Yd/MDWEkHPN8CxVL//xmXIUPOTJA==",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.0.39, 4.0.0)"
+        }
+      },
       "Lambdajection": {
         "type": "Direct",
         "requested": "[0.8.3, )",
