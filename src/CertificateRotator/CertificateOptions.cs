@@ -12,5 +12,10 @@ namespace Brighid.Identity.Certificates.CertificateRotator
         /// Gets or sets the name of the bucket where certificates live in.
         /// </summary>
         public string BucketName { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets the distinguished name for certificates.
+        /// </summary>
+        public string DistinguishedName { get; set; } = "cythral.com";
     }
 }

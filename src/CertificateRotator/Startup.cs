@@ -10,6 +10,7 @@ namespace Brighid.Identity.Certificates.CertificateRotator
         /// <inheritdoc />
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ICertificateFactory, DefaultCertificateFactory>();
         }
     }
 }
