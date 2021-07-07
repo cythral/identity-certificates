@@ -1,2 +1,4 @@
 {
+    "DotnetLayerVersion": "2",
+    "LambdajectionLayerVersion": "9"
 }
