@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+.nuget/
+.ionide/
+.fake
+.env
+brighid-discord-adapter.*.config.json
