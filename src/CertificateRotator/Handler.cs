@@ -48,9 +48,7 @@ namespace Brighid.Identity.Certificates.CertificateRotator
             var inactiveCertificate = configuration.InactiveCertificateHash;
             var newCertificate = certificateFactory.CreateSigningCertificate(
                 domain: "cythral.com",
-                keyLength: 4096,
-                hashAlgorithm: HashAlgorithmName.SHA512,
-                padding: RSASignaturePadding.Pkcs1,
+                hashAlgorithm: HashAlgorithmName.SHA256,
                 days: 90
             );
 

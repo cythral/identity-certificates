@@ -10,19 +10,17 @@ namespace Brighid.Identity.Certificates.CertificateRotator
         /// <inheritdoc />
         public CertificateInfo CreateSigningCertificate(
             string domain,
-            int keyLength,
             HashAlgorithmName hashAlgorithm,
-            RSASignaturePadding padding,
-            uint days
+            int days
         )
         {
-            using var rsa = RSA.Create(keyLength);
+            using var key = ECDsa.Create(ECCurve.NamedCurves.nistP256);
             var distinguishedName = new X500DistinguishedName($"CN={domain}");
-            var certificateRequest = new CertificateRequest(distinguishedName, rsa, hashAlgorithm, padding);
+            var certificateRequest = new CertificateRequest(distinguishedName, key, hashAlgorithm);
             var usage = new X509KeyUsageExtension(X509KeyUsageFlags.DigitalSignature, false);
             certificateRequest.CertificateExtensions.Add(usage);
 
-            var certificate = certificateRequest.CreateSelfSigned(DateTimeOffset.UtcNow, new DateTimeOffset(DateTime.UtcNow.AddDays(days)));
+            var certificate = certificateRequest.CreateSelfSigned(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddDays(days));
             return new CertificateInfo
             {
                 Hash = certificate.GetCertHashString(),

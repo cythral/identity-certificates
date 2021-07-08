@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateRotator", "src\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "tests\Tests.csproj", "{73D76456-5528-4A80-95B4-1197C41202EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalTest", "src\LocalTest\LocalTest.csproj", "{46AC9BE2-BC46-4DB4-A6E8-100B94496335}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,8 +48,21 @@ Global
 		{73D76456-5528-4A80-95B4-1197C41202EC}.Release|x64.Build.0 = Release|Any CPU
 		{73D76456-5528-4A80-95B4-1197C41202EC}.Release|x86.ActiveCfg = Release|Any CPU
 		{73D76456-5528-4A80-95B4-1197C41202EC}.Release|x86.Build.0 = Release|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Debug|x64.Build.0 = Debug|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Debug|x86.Build.0 = Debug|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Release|x64.ActiveCfg = Release|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Release|x64.Build.0 = Release|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Release|x86.ActiveCfg = Release|Any CPU
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F00AAFB5-6695-4AFD-B440-C36837DC4ED5} = {08D54E5D-54C6-473A-A0E6-D0DB80E53203}
+		{46AC9BE2-BC46-4DB4-A6E8-100B94496335} = {08D54E5D-54C6-473A-A0E6-D0DB80E53203}
 	EndGlobalSection
 EndGlobal
