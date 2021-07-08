@@ -125,8 +125,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.0.39",
-        "contentHash": "G8+hyyov3ju/4M9SdwaZhGEdYhUdp+KptrKXy9Jmjzj44MZ+wqbmxbTYc5szOTXbmx5N/b+IJM18dUUciDEnkw=="
+        "resolved": "3.7.0.40",
+        "contentHash": "gHUYpUHwqNojTyOX7gifKy9u8SEBTe0LNqGoP5aWvTl6TGune3NNZp9SwIJhuYIk5yv7dBbGaJ0XHnHSL+qv7g=="
       },
       "AWSSDK.S3": {
         "type": "Transitive",
@@ -138,10 +138,10 @@
       },
       "AWSSDK.SimpleSystemsManagement": {
         "type": "Transitive",
-        "resolved": "3.7.3.20",
-        "contentHash": "6m3YvnEAVv4gZj1cdg+IwCn86DPxbH/sb5f3tSrYSUJyji8f8KUYndIuC5Yd/MDWEkHPN8CxVL//xmXIUPOTJA==",
+        "resolved": "3.7.3.21",
+        "contentHash": "I5BkWI8fqgCd5gG+qgmCAOoJ8AoQZMyYnym+HvV4/xQ5WBg3CIl+v47/3QTMjX8PBxUhd/sm/BCjhyLhWi5+jQ==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.0.39, 4.0.0)"
+          "AWSSDK.Core": "[3.7.0.40, 4.0.0)"
         }
       },
       "Castle.Core": {
@@ -1457,7 +1457,7 @@
         "type": "Project",
         "dependencies": {
           "AWSSDK.S3": "3.7.1.9",
-          "AWSSDK.SimpleSystemsManagement": "3.7.3.20",
+          "AWSSDK.SimpleSystemsManagement": "3.7.3.21",
           "Lambdajection": "0.8.3",
           "Lambdajection.Layer": "0.8.3",
           "Lambdajection.Runtime": "0.8.3"
