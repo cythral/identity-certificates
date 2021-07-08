@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+
 using Lambdajection.Attributes;
 
 namespace Brighid.Identity.Certificates.CertificateRotator
@@ -17,6 +19,16 @@ namespace Brighid.Identity.Certificates.CertificateRotator
         /// Gets or sets the distinguished name for certificates.
         /// </summary>
         public string DistinguishedName { get; set; } = "cythral.com";
+
+        /// <summary>
+        /// Gets or sets the name of the hash algorithm to use for certificates.
+        /// </summary>
+        public HashAlgorithmName HashAlgorithmName { get; set; } = HashAlgorithmName.SHA256;
+
+        /// <summary>
+        /// Gets or sets the number of days certificates are good for.
+        /// </summary>
+        public int Lifetime { get; set; } = 60;
 
         /// <summary>
         /// Gets or sets the configuration parameter name.
