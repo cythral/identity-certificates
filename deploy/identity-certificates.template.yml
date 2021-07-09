@@ -13,6 +13,10 @@ Parameters:
     Type: String
     Description: Name of the parameter where certificate configuration lives.
 
+  RotationInterval:
+    Type: String
+    Description: Rate at which certificates are rotated.
+
 Resources:
   CertificateBucket:
     Type: AWS::S3::Bucket
@@ -37,6 +41,12 @@ Resources:
       Policies:
         - AWSLambdaExecute
         - !Ref CertificateRotatorPolicy
+      Events:
+        Interval:
+          Type: Schedule
+          Properties:
+            Schedule: !Sub rate(${RotationInterval})
+            Input: "{}"
       Environment:
         Variables:
           Certificate__BucketName: !Ref CertificateBucket
