@@ -68,9 +68,29 @@ Resources:
             Action: s3:*Object
             Resource: !Sub ${CertificateBucket.Arn}/*
 
+  CertificateReadPolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action: ssm:GetParameter
+            Resource: !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter${CertificateConfigurationParameter}
+
+          - Effect: Allow
+            Action: s3:GetObject
+            Resource: !Sub ${CertificateBucket.Arn}/*
+
 Outputs:
   CertificateBucketArn:
     Value: !GetAtt CertificateBucket.Arn
     Description: ARN of the bucket where certificates live.
     Export:
       Name: !Sub ${AWS::StackName}:CertificateBucketArn
+
+  CertificateReadPolicyArn:
+    Value: !Ref CertificateReadPolicy
+    Description: ARN of the policy granting read access to certificates and certificate configuration.
+    Export:
+      Name: !Sub ${AWS::StackName}:CertificateReadPolicyArn
