@@ -2,5 +2,5 @@
     "DotnetLayerVersion": "2",
     "LambdajectionLayerVersion": "9",
     "CertificateConfigurationParameter": "/brighid/identity/signing-certificates",
-    "RotationInterval": "1 minute"
+    "RotationInterval": "30 days"
 }
