@@ -42,8 +42,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.0.40",
-        "contentHash": "gHUYpUHwqNojTyOX7gifKy9u8SEBTe0LNqGoP5aWvTl6TGune3NNZp9SwIJhuYIk5yv7dBbGaJ0XHnHSL+qv7g=="
+        "resolved": "3.7.0.42",
+        "contentHash": "+5A5o248NToq22nUoOv8jPDscwZdL+eyNJqOCFlznLrBLXd9XjYkJ8UBnBpqbAm4SyY/7v/miT4k8fZ8KauyOg=="
       },
       "AWSSDK.S3": {
         "type": "Transitive",
@@ -55,10 +55,10 @@
       },
       "AWSSDK.SimpleSystemsManagement": {
         "type": "Transitive",
-        "resolved": "3.7.3.21",
-        "contentHash": "I5BkWI8fqgCd5gG+qgmCAOoJ8AoQZMyYnym+HvV4/xQ5WBg3CIl+v47/3QTMjX8PBxUhd/sm/BCjhyLhWi5+jQ==",
+        "resolved": "3.7.3.23",
+        "contentHash": "tCrlMqbqz6pZ992H2XxJSYSh+h7pOw2JmC03MYH/riyy8nJz9h5lhH3rdZetFuDD2k8SgJ9Plv1BFWvOJL9vzA==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.0.40, 4.0.0)"
+          "AWSSDK.Core": "[3.7.0.42, 4.0.0)"
         }
       },
       "Humanizer.Core": {
@@ -1569,7 +1569,7 @@
         "type": "Project",
         "dependencies": {
           "AWSSDK.S3": "3.7.1.9",
-          "AWSSDK.SimpleSystemsManagement": "3.7.3.21",
+          "AWSSDK.SimpleSystemsManagement": "3.7.3.23",
           "Lambdajection": "0.8.3",
           "Lambdajection.Layer": "0.8.3",
           "Lambdajection.Runtime": "0.8.3"
