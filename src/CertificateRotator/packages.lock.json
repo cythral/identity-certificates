@@ -13,11 +13,11 @@
       },
       "AWSSDK.SimpleSystemsManagement": {
         "type": "Direct",
-        "requested": "[3.7.3.21, )",
-        "resolved": "3.7.3.21",
-        "contentHash": "I5BkWI8fqgCd5gG+qgmCAOoJ8AoQZMyYnym+HvV4/xQ5WBg3CIl+v47/3QTMjX8PBxUhd/sm/BCjhyLhWi5+jQ==",
+        "requested": "[3.7.4.2, )",
+        "resolved": "3.7.4.2",
+        "contentHash": "1mRH/cv4zbX8FWMVukpeVSctAd87FyYK2uNjU9QmxIdQa7TKlEn1CSruAmbdA7y+yEkyK3QDvyFz05iIhatbyg==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.0.40, 4.0.0)"
+          "AWSSDK.Core": "[3.7.1, 4.0.0)"
         }
       },
       "Lambdajection": {
@@ -41,9 +41,9 @@
       },
       "Lambdajection.Runtime": {
         "type": "Direct",
-        "requested": "[0.8.3, )",
-        "resolved": "0.8.3",
-        "contentHash": "dfRXGTY3o8RQTmVkfE6r1Z73Ja7bgi2jqWouv5uiUHo2La5kKW1uR1T9TBk5APBYH9920YtHBzV3NNCEga8tVQ==",
+        "requested": "[0.8.4, )",
+        "resolved": "0.8.4",
+        "contentHash": "FteXjVQgWIa5VXvf59DpmKUfi34QoJU0GtRFd+VFg+VBRF9P9dTcyiH876M/LDGhxDzSb+YzPcwvHqKG9qL61w==",
         "dependencies": {
           "Amazon.Lambda.RuntimeSupport": "1.3.0"
         }
@@ -88,8 +88,8 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.0.40",
-        "contentHash": "gHUYpUHwqNojTyOX7gifKy9u8SEBTe0LNqGoP5aWvTl6TGune3NNZp9SwIJhuYIk5yv7dBbGaJ0XHnHSL+qv7g=="
+        "resolved": "3.7.1",
+        "contentHash": "VWnzRxzrMedMJr6Xkl1/HFzgYfRuT3rkUGhp4rqOkXgutaMoNk8HV+6TfjmAhz99CmTV23RxSMUwGwPfIrxy5w=="
       },
       "Humanizer.Core": {
         "type": "Transitive",
