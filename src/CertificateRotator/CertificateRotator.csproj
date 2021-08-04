@@ -5,8 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AWSSDK.S3" Version="3.7.1.19" />
-        <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.4.5" />
+        <PackageReference Include="AWSSDK.S3" Version="3.7.1.20" />
+        <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.4.6" />
         <PackageReference Include="Lambdajection" Version="0.8.4" />
         <PackageReference Include="Lambdajection.Runtime" Version="0.8.4" />
         <PackageReference Include="Lambdajection.Layer" Version="0.8.4" />
