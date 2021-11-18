@@ -1,13 +1,13 @@
 Description: Signing Certificate Management for Brighid Identity.
 Transform: AWS::Serverless-2016-10-31
 Parameters:
-  LambdajectionLayerVersion:
+  LambdajectionVersion:
     Type: String
-    Description: ARN of the Lambda Layer containing Lambdajection + its dependencies
+    Description: Version of Lambajection to use.
 
-  DotnetLayerVersion:
+  DotnetVersion:
     Type: String
-    Description: ARN of the Lambda Layer containing .NET
+    Description: Version of .NET to use.
 
   CertificateConfigurationParameter:
     Type: String
@@ -33,11 +33,11 @@ Resources:
       Handler: CertificateRotator::Brighid.Identity.Certificates.CertificateRotator.Handler::Run
       Runtime: provided.al2
       Timeout: 30
-      CodeUri: ../bin/CertificateRotator/Release/net5.0/linux-x64/publish/
+      CodeUri: ../bin/CertificateRotator/Release/linux-x64
       MemorySize: 512
       Layers:
-        - !Sub arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:dotnet:${DotnetLayerVersion}
-        - !Sub arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:lambdajection:${LambdajectionLayerVersion}
+        - !Sub "{{resolve:ssm:/dotnet/${DotnetVersion}/layer-arn}}"
+        - !Sub "{{resolve:ssm:/lambdajection/${LambdajectionVersion}/layer-arn}}"
       Policies:
         - AWSLambdaExecute
         - !Ref CertificateRotatorPolicy
