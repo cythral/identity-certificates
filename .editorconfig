@@ -3,6 +3,9 @@ root = true
 [*.{cs,csx}]
 insert_final_newline = true
 
+# New should be followed by a space
+dotnet_diagnostic.SA1000.severity = none
+
 # Namespace should match folder structure
 dotnet_diagnostic.IDE0130.severity = none
 
