@@ -41,8 +41,8 @@
       },
       "AWSSDK.SimpleSystemsManagement": {
         "type": "Transitive",
-        "resolved": "3.7.12.9",
-        "contentHash": "0VXvlLPUigbBaGNbuNOLUroQeeM4vV9LZORlLGnJuTJywUT5sVOuG7JKUN4xAtJlbdbXV0cTRxsIGc+3/WJWzg==",
+        "resolved": "3.7.12.10",
+        "contentHash": "CVz9QH4aVKZR/tMLV5qH8cYMZtGK0qhYLpYhNinkuogJWsGHv4ERDzM8+3y4yGpoJlHkxIzI5PVE1LHKFWdGnw==",
         "dependencies": {
           "AWSSDK.Core": "[3.7.7, 4.0.0)"
         }
@@ -1547,7 +1547,7 @@
         "type": "Project",
         "dependencies": {
           "AWSSDK.S3": "3.7.7.21",
-          "AWSSDK.SimpleSystemsManagement": "3.7.12.9",
+          "AWSSDK.SimpleSystemsManagement": "3.7.12.10",
           "Lambdajection": "0.9.2",
           "Lambdajection.Layer": "0.9.2",
           "Lambdajection.Runtime": "0.9.2"
