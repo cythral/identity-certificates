@@ -138,23 +138,23 @@
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.12.18",
-        "contentHash": "T5IkNtO921kQV8gMzfbEKoz0zki3tGB2+sJiTlr4cmzb1LIs2pvnIQjClDee4k5kQN2DGKTJxoQM3J2aXVGnwA=="
+        "resolved": "3.7.12.21",
+        "contentHash": "nKa0w3u+VKVJB6joat/mX7KtQFCVHkwpyLaE/og1eATe3mzSdiWC58YUlPTB3MqV/ng0/6uc9ih0H0kCt20a6A=="
       },
       "AWSSDK.S3": {
         "type": "Transitive",
-        "resolved": "3.7.9.36",
-        "contentHash": "J6U5XVzI6cAC1C6SwgOwvnAFSNOlSzEF0pKKB4kcp+icG6/kPvKGQeOqaTrg9Qf4bgC4JtJYzvSHADj4i6p4Xg==",
+        "resolved": "3.7.9.39",
+        "contentHash": "QveSVzZv4N3oajUwjWKrsK2HORYsyfICOubsn4r4WlOOH44053tinOWClGU0iAt+4hQHzQPGkmJXUaSG/AWqqw==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.18, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.21, 4.0.0)"
         }
       },
       "AWSSDK.SimpleSystemsManagement": {
         "type": "Transitive",
-        "resolved": "3.7.17.35",
-        "contentHash": "wEjb2jJOv2zTkXwTt6PeFk2Dy09GbBOwMNiS/3UF7ExsDM7NXYJWEWkvleFdUF6GyJmImThC+G5H2XXXzva/Bw==",
+        "resolved": "3.7.17.38",
+        "contentHash": "fEiQMR8r80z/G7vmTtyuI49u6Uzj+8ZE1A+MAxPQVePWJ/kh176HF6Bd/ab0xvrrQIMn3MDmKBpDn1HGq11COQ==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.18, 4.0.0)"
+          "AWSSDK.Core": "[3.7.12.21, 4.0.0)"
         }
       },
       "Castle.Core": {
@@ -1468,8 +1468,8 @@
       "certificaterotator": {
         "type": "Project",
         "dependencies": {
-          "AWSSDK.S3": "3.7.9.36",
-          "AWSSDK.SimpleSystemsManagement": "3.7.17.35",
+          "AWSSDK.S3": "3.7.9.39",
+          "AWSSDK.SimpleSystemsManagement": "3.7.17.38",
           "Lambdajection": "0.9.2",
           "Lambdajection.Layer": "0.9.2",
           "Lambdajection.Runtime": "0.9.2"
