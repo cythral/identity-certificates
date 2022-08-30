@@ -6,8 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AWSSDK.S3" Version="3.7.9.44" />
-        <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.17.43" />
+        <PackageReference Include="AWSSDK.S3" Version="3.7.9.45" />
+        <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.7.17.44" />
     </ItemGroup>
 
     <ItemGroup>
