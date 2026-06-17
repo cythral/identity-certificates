@@ -1546,11 +1546,11 @@
       "certificaterotator": {
         "type": "Project",
         "dependencies": {
-          "AWSSDK.S3": "3.7.511.8",
-          "AWSSDK.SimpleSystemsManagement": "3.7.505.15",
-          "Lambdajection": "0.9.2",
-          "Lambdajection.Layer": "0.9.2",
-          "Lambdajection.Runtime": "0.9.2"
+          "AWSSDK.S3": "[3.7.511.8, )",
+          "AWSSDK.SimpleSystemsManagement": "[3.7.505.15, )",
+          "Lambdajection": "[0.9.2, )",
+          "Lambdajection.Layer": "[0.9.2, )",
+          "Lambdajection.Runtime": "[0.9.2, )"
         }
       }
     }
